@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SYNCTHING_VERSION=1.29.7
+SYNCTHING_VERSION=2.0.12
 SYNCTHING_PATH=/media/fat/Scripts/.config/syncthing
 
 export STCONFDIR=${SYNCTHING_PATH}
