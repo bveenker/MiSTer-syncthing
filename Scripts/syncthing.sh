@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SYNCTHING_VERSION=2.0.12
+SYNCTHING_VERSION=1.30.0
 SYNCTHING_PATH=/media/fat/Scripts/.config/syncthing
 
 export STCONFDIR=${SYNCTHING_PATH}
@@ -28,7 +28,7 @@ install() {
 
 start() {
   echo Starting syncthing...
-  ${SYNCTHING_PATH}/syncthing serve --logfile=/var/log/syncthing.log > /dev/null 2>&1 &
+  ${SYNCTHING_PATH}/syncthing serve --no-upgrade --logfile=/var/log/syncthing.log > /dev/null 2>&1 &
 }
 
 stop() {
