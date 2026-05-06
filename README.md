@@ -6,6 +6,8 @@
 
 A script for running [Syncthing](https://syncthing.net/) on your MiSTer.
 
+Thanks davewongillies for the original! Since I have encountered issues running syncthing v2 on MiSTer, this fork keeps syncthing on v1
+
 ## Prerequisites
 
 * An Internet connected MiSTer
@@ -15,8 +17,8 @@ A script for running [Syncthing](https://syncthing.net/) on your MiSTer.
 1. Add the following to `/media/fat/downloader.ini`.
 
 ```ini
-[davewongillies/syncthing]
-db_url = https://raw.githubusercontent.com/davewongillies/MiSTer-syncthing/db/db.json.zip
+[bveenker/syncthing]
+db_url = https://raw.githubusercontent.com/bveenker/MiSTer-syncthing/db/db.json.zip
 ```
 
 2. Run `update` or `update_all` from the Scripts menu.
